@@ -1,0 +1,97 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'senha.ui'
+#
+# Created by: PyQt5 UI code generator 5.13.2
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(385, 358)
+        MainWindow.setMinimumSize(QtCore.QSize(385, 358))
+        MainWindow.setMaximumSize(QtCore.QSize(385, 358))
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label.setGeometry(QtCore.QRect(6, 20, 371, 20))
+        font = QtGui.QFont()
+        font.setFamily("Lucida Console")
+        font.setPointSize(16)
+        self.label.setFont(font)
+        self.label.setAlignment(QtCore.Qt.AlignCenter)
+        self.label.setObjectName("label")
+        self.label_2 = QtWidgets.QLabel(self.centralwidget)
+        self.label_2.setGeometry(QtCore.QRect(10, 90, 271, 21))
+        font = QtGui.QFont()
+        font.setFamily("Lucida Console")
+        font.setPointSize(11)
+        self.label_2.setFont(font)
+        self.label_2.setObjectName("label_2")
+        self.len_password_button = QtWidgets.QSpinBox(self.centralwidget)
+        self.len_password_button.setGeometry(QtCore.QRect(290, 90, 51, 21))
+        self.len_password_button.setMinimum(8)
+        self.len_password_button.setMaximum(64)
+        self.len_password_button.setObjectName("len_password_button")
+        self.label_3 = QtWidgets.QLabel(self.centralwidget)
+        self.label_3.setGeometry(QtCore.QRect(10, 120, 191, 31))
+        font = QtGui.QFont()
+        font.setFamily("Lucida Console")
+        font.setPointSize(11)
+        self.label_3.setFont(font)
+        self.label_3.setObjectName("label_3")
+        self.generate_button = QtWidgets.QPushButton(self.centralwidget)
+        self.generate_button.setGeometry(QtCore.QRect(60, 180, 251, 31))
+        font = QtGui.QFont()
+        font.setFamily("Lucida Console")
+        font.setPointSize(11)
+        self.generate_button.setFont(font)
+        self.generate_button.setObjectName("generate_button")
+        self.output_label = QtWidgets.QLineEdit(self.centralwidget)
+        self.output_label.setGeometry(QtCore.QRect(12, 230, 361, 41))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        font.setBold(False)
+        font.setWeight(50)
+        self.output_label.setFont(font)
+        self.output_label.setAlignment(QtCore.Qt.AlignCenter)
+        self.output_label.setReadOnly(True)
+        self.output_label.setCursorMoveStyle(QtCore.Qt.LogicalMoveStyle)
+        self.output_label.setObjectName("output_label")
+        self.copy_button = QtWidgets.QPushButton(self.centralwidget)
+        self.copy_button.setEnabled(False)
+        self.copy_button.setGeometry(QtCore.QRect(60, 300, 251, 31))
+        font = QtGui.QFont()
+        font.setFamily("Lucida Console")
+        font.setPointSize(11)
+        self.copy_button.setFont(font)
+        self.copy_button.setCheckable(False)
+        self.copy_button.setChecked(False)
+        self.copy_button.setAutoExclusive(False)
+        self.copy_button.setObjectName("copy_button")
+        self.yes_button = QtWidgets.QCheckBox(self.centralwidget)
+        self.yes_button.setGeometry(QtCore.QRect(210, 126, 70, 21))
+        font = QtGui.QFont()
+        font.setFamily("Lucida Console")
+        self.yes_button.setFont(font)
+        self.yes_button.setChecked(False)
+        self.yes_button.setObjectName("yes_button")
+        MainWindow.setCentralWidget(self.centralwidget)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "Password Generator"))
+        self.label.setText(_translate("MainWindow", "Password Generator"))
+        self.label_2.setText(_translate("MainWindow", "Tamanho da senha (min 8 carac)"))
+        self.label_3.setText(_translate("MainWindow", "Caracteres especiais"))
+        self.generate_button.setText(_translate("MainWindow", "Generate"))
+        self.copy_button.setText(_translate("MainWindow", "Copy to Clipboard"))
+        self.yes_button.setText(_translate("MainWindow", "Sim"))
